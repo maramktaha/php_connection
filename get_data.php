@@ -1,17 +1,17 @@
 <?php
 
-  include 'connection.php';
-  $conn = OpenCon();
+include 'connection.php';
+$conn = OpenCon();
 $doctor_name =  $_REQUEST['doctorname'];
 
-        $room = $_REQUEST['room'];
-        $surgery_date =  $_REQUEST['date'];
-        $reg_time = $_REQUEST['time'];
-        $patient_name = $_REQUEST['patientname'];
-        $surgery_type=$_REQUEST['surgerytype'];
+      $room = $_REQUEST['room'];
+      $surgery_date =  $_REQUEST['date'];
+      $reg_time = $_REQUEST['time'];
+      $patient_name = $_REQUEST['patientname'];
+      $surgery_type=$_REQUEST['surgerytype'];
 
-        $sql = "INSERT INTO Details (doctor_name,room,surgery_date,reg_time,patient_name,surgery_type)  VALUES ('$doctor_name', 
-        '$room','$surgery_date','$reg_time','$patient_name','$surgery_type')";
+      $sql = "INSERT INTO Details (doctor_name,room,surgery_date,reg_time,patient_name,surgery_type)  VALUES ('$doctor_name', 
+      '$room','$surgery_date','$reg_time','$patient_name','$surgery_type')";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -26,6 +26,7 @@ $doctor_name =  $_REQUEST['doctorname'];
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+
 </head>
 <body>
    
